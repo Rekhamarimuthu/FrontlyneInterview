@@ -1,0 +1,355 @@
+.profileName {
+    padding: 8px;
+}
+
+.grid {
+    border-right: 1px solid #744e4e1a !important;
+    padding: 20px;
+}
+
+.leftpanel {
+    border-left: 1px solid #744e4e1a !important;
+}
+
+li {
+    gap: 8px;
+}
+
+.inner-div {
+    padding: 28px 0px 12px 8px;
+    gap: 4px;
+}
+
+.navbar {
+    padding: 20px 28px 20px 28px;
+    font-size: medium;
+    gap: 8px;
+    border-bottom: 1px solid #1C1C1C1A !important;
+}
+
+.DasIcon,
+.title {
+    color: rgba(28, 28, 28, 0.4);
+}
+
+.overviewBtn {
+    background-color: #0000000D;
+    border-radius: 12px;
+}
+
+.star {
+    margin-right: 0px;
+}
+
+.serach {
+    padding: 4px 8px 4px 8px;
+    gap: 8px;
+    border-radius: 8px;
+    opacity: 10px;
+}
+
+.icon {
+    top: 1.88px;
+    left: 2.5px;
+    color: black;
+}
+
+.serachText {
+    margin-left: 10px;
+}
+
+.bug {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.subPara {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 15px;
+    color: rgba(28, 28, 28, 0.4);
+}
+
+.BugBeetle {
+    background-color: rgba(227, 245, 255, 1);
+}
+
+.user {
+    background-color: rgba(229, 236, 246, 1);
+}
+
+.Broadcast {
+    background-color: rgba(229, 236, 246, 1);
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #3B4056;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20.63px;
+    color: #676B7B;
+
+}
+
+.percentage {
+    color: #72E128;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.minus {
+    color: red;
+}
+
+.btnMonth {
+    background-color: #E8E9ED;
+    border-radius: 15%;
+    padding: 0%;
+    margin: 20px 0px 10px 0px;
+}
+
+.card-col {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.body-box {
+    border-radius: 10px;
+    border: 1px;
+}
+
+.bar-img {
+    margin-left: 25px;
+}
+
+.traffic-col {
+    padding-bottom: 15px;
+}
+
+.text-body-secondary {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #1C1C1C;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1C1C1C;
+    width: 308.66px;
+    min-height: 21px;
+
+}
+
+.arrow-move {
+    border-radius: 50%;
+    background-color: #0000000D;
+}
+
+.three-dots {
+    border-radius: 10%;
+    background-color: #0000000D;
+}
+
+.card-header {
+    background-color: white;
+}
+
+.submsg {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 16.41px; */
+    text-align: left;
+    color: #868E96;
+
+
+}
+
+.servy {
+    margin-top: 15px;
+
+}
+
+
+.scrool-bg {
+    height: 300px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.footerBtn {
+    width: 430px;
+    height: 40px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    margin-top: 20px;
+
+}
+
+.footText {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: right;
+    color: #343A40;
+    font-weight: bold;
+
+}
+
+.rating,
+.three-dots {
+    margin-left: 50%;
+}
+
+.cust {
+    margin-left: 20px;
+}
+
+.detailbtn {
+    padding-top: 3%;
+    border-top: 1px solid #1C1C1C1A;
+}
+
+.text-center {
+    margin-bottom: 30px;
+}
+
+.text-justify {
+    margin-bottom: 5px;
+}
+
+.piechart {
+    top: 682.81px;
+    padding-left: 30%;
+    margin-bottom: 30px;
+}
+
+.chatcard {
+    border: transparent;
+}
+
+.text-muted {
+    background: transparent;
+}
+
+.bg-body {
+    background-color: #F1F3FA !important;
+}
+
+.btn-send {
+    background-color: #FF5C75;
+}
+
+.bodytextcon {
+    color: #1C1C1C;
+    background-color: rgba(254, 245, 228, 1) !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+tr {
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+}
+
+thead {
+
+    background-color: transparent !important;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    color: #00000066 !important;
+
+}
+
+table,
+button {
+    border: transparent;
+    border-radius: 10px;
+}
+
+table,
+tr {
+    border-bottom: 3px solid white;
+    border-radius: 40px !important;
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+    margin-bottom: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #E5ECF6;
+}
+
+.avatarimg {
+    background-color: transparent;
+}
+
+.productTbl {
+    text-align: start;
+    margin-left: 20px;
+    font-family: 600;
+    font-size: 20px;
+    font-style: bold;
+
+}
+
+table {
+    border: 1 ps solid #1C1C1C1A;
+}
+
+.piechart .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #1E1E1E;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 70%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.piechart .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.piechart:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
