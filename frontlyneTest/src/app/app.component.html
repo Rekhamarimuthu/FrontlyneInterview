@@ -1,0 +1,514 @@
+<div class="container-start">
+  <!-- main container -->
+  <div class="row">
+    <!-- First column with three inner divs -->
+    <div class="col-2 grid">
+
+      <div class="inner-div">
+        <p class="profileName"><span><img src="/assets/ByeWind.svg" class="profileIcon"> ByeWind</span></p>
+        <div class="profileDetail">
+          <p><span><img src="/assets/Dot.svg" class="dotIcon">Overview</span></p>
+          <p><span><img src="/assets/Dot.svg" class="dotIcon">Projects</span></p>
+        </div>
+
+      </div>
+      <div class="inner-div mb-2">
+        <p class="title">Dashboards</p>
+        <p class="overviewBtn"><span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"><img
+              src="/assets/ChartPieSlice.svg" class="overviewIcon"> Overview</span></p>
+        <p><span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"><img src="/assets/FolderNotch.svg"
+              class="eCommerceIcon"> eCommerce</span></p>
+        <p><span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"><img src="/assets/BookOpen.svg"
+              class="ProjectIcon"> Projects</span></p>
+        <p><span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"><img src="/assets/ChartPieSlice.svg"
+              class="coursesIcon"> Online courses</span></p>
+      </div>
+      <div class="inner-div">
+        <p class="title">Pages</p>
+        <p>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+            aria-expanded="false" aria-controls="collapseWidthExample">
+            <span>
+              <!-- <img src="/assets/ArrowLineRight.svg" > -->
+              <img [src]="isOriginalImage ? originalImage : alternateImage" (click)="toggleImage()" alt="Toggle Image"
+                class="arrowIcon" style="cursor: pointer;">
+            </span> User profile
+          </button>
+        </p>
+        <div>
+          <div class="collapse" id="collapseWidthExample">
+            <div class="card card-body">
+              <p>Overview</p>
+              <p>Projects</p>
+              <p>Campaigns</p>
+              <p>Documents</p>
+              <p>Followers</p>
+            </div>
+          </div>
+        </div>
+        <p><span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"><img src="/assets/IdentificationCard.svg"
+              class="ProjectIcon"> Account</span></p>
+        <p><span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"><img src="/assets/UsersThree.svg"
+              class="coursesIcon"> Corporate</span></p>
+        <p><span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"><img src="/assets/Notebook.svg"
+              class="ProjectIcon"> Blog</span></p>
+        <p><span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"><img src="/assets/ChatsTeardrop.svg"
+              class="coursesIcon"> Social</span></p>
+
+      </div>
+    </div>
+
+    <!-- Second column -->
+    <div class="col-8">
+      <!-- nav bar -->
+      <nav class="navbar">
+        <!-- <div class="container-fluid"> -->
+        <div>
+          <span> <img src="/assets/Star.svg" class="star"></span>
+          <span class="DasIcon">Dashboards</span> / <span>Overview</span>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control search me-2" type="search" placeholder="Search" aria-label="Search">
+          <img src="/assets/Text.svg" class="icon serachText">
+          <img src="/assets/Button.svg" class="icon">
+          <img src="/assets/Bell.svg" class="icon">
+          <img src="/assets/pannel.svg" class="icon">
+        </form>
+        <!-- </div> -->
+      </nav>
+
+      <div class="row">
+        <div class="col-sm-2 card-col" style="width: 16rem;">
+          <div class="card ">
+            <div class="card-body body-box">
+              <img src="/assets/Background.svg">
+              <br>
+              <span>155k <span class="percentage">+22% </span> <img src="assets/arrowG.svg"></span>
+              <p class="card-text">Total Orders</p>
+              <a href="#" class="btn btnMonth">Last 4 Month</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 card-col" style="width: 16rem;">
+          <div class="card">
+            <div class="card-body">
+              <img src="/assets/BackgroundTwo.svg">
+              <br>
+              <span>$13.4k <span class="percentage">+382% </span> <img src="assets/arrowG.svg"></span>
+              <p class="card-text">Total Sales</p>
+              <a href="#" class="btn btnMonth">Last Six Month</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 card-col" style="width: 16rem;">
+          <div class="card">
+            <div class="card-body">
+              <span>$88.5k <span class="percentage minus">-18% </span></span>
+              <p class="card-text">Total Profit</p>
+              <img src="/assets/Container.svg">
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2 card-col" style="width: 16rem;">
+          <div class="card">
+            <div class="card-body">
+              <span>$27.9k <span class="percentage">+16% </span> <img src="assets/arrowG.svg"></span>
+              <p class="card-text">Total Growth</p>
+              <img src="/assets/pie.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- chart -->
+      <div class="row">
+        <div class="col-9 ">
+          <div class="card">
+            <div class="card-body">
+              <!-- echart with live data -->
+              <app-line-chart></app-line-chart>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 traffic-col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Traffic by Website</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">
+                <p>Google <span><img src="/assets/Bar.svg" class="bar-img"></span></p>
+                <p>Youtube <span><img src="/assets/BarLength.svg" class="bar-img"></span></p>
+                <p>Instagram <span><img src="/assets/Bar.svg" class="bar-img"></span></p>
+                <p>Pintrest <span><img src="/assets/BarLength.svg" class="bar-img"></span></p>
+                <p>Fcebook<span><img src="/assets/Bar.svg" class="bar-img"></span></p>
+                <p>Instagram<span><img src="/assets/BarLength.svg" class="bar-img"></span></p>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- third row -->
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-header">
+              <img src="/assets/arrows-move.svg" class="arrow-move"> <span class="cust">Customer Review</span> <img
+                src="/assets/three-dots.svg" class="three-dots">
+              <p class="submsg" style="margin-left: 40px;">Messages</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Sally D
+                <span class="submsg">20 min ago</span>
+                <span class="rating"><img src="/assets/rating.svg"> 5/5</span>
+                <p class="submsg">It is over qualified and easy to use, thank you. </p>
+              </li>
+              <li class="list-group-item">Michael K.
+                <span class="submsg">1 day ago</span>
+                <span class="rating"><img src="/assets/rating.svg"> 2/5</span>
+                <p class="submsg">An improvement is needed asap. </p>
+              </li>
+              <li class="list-group-item">Sally D
+                <span class="submsg">20 min ago</span>
+                <span class="rating"><img src="/assets/rating.svg"> 2.5/5</span>
+                <p class="submsg">It is over qualified and easy to use, thank you. </p>
+              </li>
+              <li class="list-group-item">Deniz T.
+                <span class="submsg">1 day ago</span>
+                <span class="rating"><img src="/assets/rating.svg"> 5/5</span>
+                <p class="submsg">It is over qualified and easy to use, thank you. </p>
+              </li>
+            </ul>
+            <footer class="footerBtn">
+              <p class="footText">SEE ALL REVIEWS <span><img src="/assets/chevron-right.svg" class="footArrow"></span>
+              </p>
+            </footer>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-header">
+              <img src="/assets/arrows-move.svg" class="arrow-move"> <span class="cust">Customer Review</span> <img
+                src="/assets/three-dots.svg" class="three-dots">
+              <p class="submsg" style="margin-left: 40px;">Messages</p>
+            </div>
+            <div class="card-body">
+              <div class="piechart">
+
+                <img src="/assets/pieChart.svg">
+                <span class="tooltiptext">SERVER
+                  <p>Payment 20%
+                    Amount 1,00,000
+                  </p>
+                </span>
+
+
+              </div>
+
+              <div class="container text-center">
+                <div class="row justify-content-md-center text-justify">
+                  <div class="col">
+                    SERVER 20%
+                  </div>
+                  <div class="col">
+                    HOSTING 20%
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    SERVICE 15%
+                  </div>
+                  <div class="col">
+                    OTHERS 15%
+                  </div>
+                </div>
+              </div>
+
+              <footer class="footerBtn detailbtn">
+                <p class="footText">SEE ALL DETAILS <span><img src="/assets/chevron-right.svg" class="footArrow"></span>
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fouth row -->
+      <div class="row servy">
+        <div class="col-6">
+          <div class="card border-success mb-3">
+            <div class="card-header bg-transparent">Tasks</div>
+
+            <div class="overflow-auto">
+              <div class="card-body scrool-bg">
+                <h5 class="card-title"> <input type="checkbox"> iOS App home page</h5>
+                <p class="card-text submsg">SDue on 23 Aug, 2019</p>
+
+                <h5 class="card-title"> <input type="checkbox"> iOS App home page</h5>
+                <p class="card-text submsg">SDue on 23 Aug, 2019</p>
+
+                <h5 class="card-title"> <input type="checkbox"> iOS App home page</h5>
+                <p class="card-text submsg">SDue on 23 Aug, 2019</p>
+
+                <h5 class="card-title"> <input type="checkbox"> iOS App home page</h5>
+                <p class="card-text submsg">SDue on 23 Aug, 2019</p>
+
+                <h5 class="card-title"> <input type="checkbox"> iOS App home page</h5>
+                <p class="card-text submsg">SDue on 23 Aug, 2019</p>
+
+                <h5 class="card-title"> <input type="checkbox"> iOS App home page</h5>
+                <p class="card-text submsg">SDue on 23 Aug, 2019</p>
+
+                <h5 class="card-title"> <input type="checkbox"> iOS App home page</h5>
+                <p class="card-text submsg">SDue on 23 Aug, 2019</p>
+              </div>
+
+            </div>
+            <div class="card-footer bg-transparent border-success">
+              <p class="footText">SEE ALL <span><img src="/assets/chevron-right.svg" class="footArrow"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="card border-success mb-3">
+            <div class="card-header bg-transparent">Recent Conversations
+              <img src="/assets/three-dots.svg" class="three-dots">
+            </div>
+
+            <!-- <div class="overflow-auto"> -->
+            <div class="card-body scrool-bg">
+              <section>
+                <div class="container">
+
+                  <div class="row d-flex justify-content-center">
+                    <div class="card">
+                      <div class="card-header">
+                        Products
+                      </div>
+                      <div class="card-body">
+                        <div class="col">
+
+                          <div class="card chatcard">
+
+                            <div class="card-body" data-mdb-perfect-scrollbar-init style="position: relative;">
+
+                              <div class="d-flex justify-content-between">
+                                <p class="small mb-1">Timona Siera</p>
+                                <p class="small mb-1 text-muted">23 Jan 2:00 pm</p>
+                              </div>
+                              <div class="d-flex flex-row justify-content-start">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
+                                  alt="avatar 1" style="width: 45px; height: 100%;">
+                                <div>
+                                  <p class="small p-2 ms-3 mb-3 rounded-3 bg-body">For what reason
+                                    would it
+                                    be advisable for me to think about business content?</p>
+                                </div>
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <p class="small mb-1 text-muted">23 Jan 2:05 pm</p>
+                                <p class="small mb-1">Johny Bullock</p>
+                              </div>
+                              <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                                <div>
+                                  <p class="small p-2 me-3 mb-3 bodytextcon  rounded-3 ">Thank you for your believe in
+                                    our
+                                    supports</p>
+                                </div>
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                                  alt="avatar 1" style="width: 45px; height: 100%;">
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <p class="small mb-1">Timona Siera</p>
+                                <p class="small mb-1 text-muted">23 Jan 5:37 pm</p>
+                              </div>
+                              <div class="d-flex flex-row justify-content-start">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
+                                  alt="avatar 1" style="width: 45px; height: 100%;">
+                                <div>
+                                  <p class="small p-2 ms-3 mb-3 rounded-3 bg-body">Lorem ipsum dolor
+                                    sit amet
+                                    consectetur adipisicing elit similique quae consequatur</p>
+                                </div>
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <p class="small mb-1 text-muted">23 Jan 6:10 pm</p>
+                                <p class="small mb-1">Johny Bullock</p>
+                              </div>
+                              <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                                <div>
+                                  <p class="small p-2 me-3 mb-3  rounded-3 bodytextcon">Dolorum quasi voluptates quas
+                                    amet in
+                                    repellendus perspiciatis fugiat</p>
+                                </div>
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                                  alt="avatar 1" style="width: 45px; height: 100%;">
+                              </div>
+
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+                              <div class="input-group mb-0">
+                                <input type="text" class="form-control" placeholder="Type message"
+                                  aria-label="Recipient's username" />
+                                <button data-mdb-button-init data-mdb-ripple-init class="btn btn-send" type="button"
+                                  id="button-addon2">
+                                  Button
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                  </div>
+
+                </div>
+              </section>
+              <!-- </div> -->
+
+            </div>
+            <div class="card-footer bg-transparent border-success">
+              <p class="footText">SEE ALL <span><img src="/assets/chevron-right.svg" class="footArrow"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- carosul -->
+        <!-- <div class="container text-center">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+              1 of 3
+            </div>
+            <div class="col-md-auto">
+              Variable width content
+            </div>
+            <div class="col col-lg-2">
+              3 of 3
+            </div>
+          </div>
+        </div> -->
+
+        <!-- table -->
+        <div class="container text-center">
+          <div class="row table ">
+            <div class="card-header bg-transparent productTbl">Products
+              <img src="/assets/three-dots.svg" class="three-dots" style="margin-left: 80%;">
+            </div>
+            <div class="col">
+              <table class="table table-striped">
+                <thead class="thead ">
+
+                  <tr>
+                    <th>info </th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>status</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td><img src="/assets/avatar.svg" class="avatarimg">ByeWind</td>
+                  <td>Jun 24,2022</td>
+                  <td>$942.00</td>
+                  <td><button type="button" style="background-color: #C6C7F8; color: #9B51E0;">Primary</button></td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/Female01.svg" class="avatarimg">ByeWind</td>
+                  <td>Jun 24,2022</td>
+                  <td>$942.00</td>
+                  <td><button type="button" style="background-color: #A1E3CB;color: #219653;">Success</button></td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/avatar.svg" class="avatarimg">ByeWind</td>
+                  <td>Jun 24,2022</td>
+                  <td>$942.00</td>
+                  <td><button type="button" style="background-color: #B1E3FF;color:#2F80ED">Warning</button></td>
+                </tr>
+                <tr>
+                  <td><img src="/assets/Female04.svg" class="avatarimg">ByeWind</td>
+                  <td>Jun 24,2022</td>
+                  <td>$942.00</td>
+                  <td><button type="button" style="background-color: #00000066;color: #00000066;">Info</button></td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third column -->
+    <div class="col-2 leftpanel">
+      <div class="inner-div">
+        <p>Notification</p>
+        <span class="bug"><img src="/assets/BugBeetle.svg" class="BugBeetle"> You fixed a bug</span>
+        <p class="subPara">Just now</p>
+        <span><img src="/assets/User.svg" class="user"> You fixed a bug</span>
+        <p class="subPara">59 miniutes ago</p>
+        <span><img src="/assets/BugBeetle.svg" class="BugBeetle"> You fixed a bug</span>
+        <p class="subPara">12 hours ago</p>
+        <span><img src="/assets/Broadcast.svg" class="BugBeetle"> You fixed a bug courses</span>
+        <p class="subPara">Today, 11:59 AM</p>
+      </div>
+
+      <div class="inner-div mb-2">
+        <p>Activities</p>
+        <span><img src="/assets/Abstract03.svg"> Changed the style</span>
+        <p class="subPara">Just now</p>
+        <span><img src="/assets/Female03.svg"> Released a new version</span>
+        <p class="subPara">59 miniutes ago</p>
+        <span><img src="/assets/Male02.svg"> Submitted a bug</span>
+        <p class="subPara">12 hours ago</p>
+        <span><img src="/assets/3D03.svg"> Modified A data in page X.</span>
+        <p class="subPara">Today, 11:50 AM</p>
+        <span><img src="/assets/Abstract04.svg"> Deleted a page in Project X.</span>
+        <p class="subPara">Feb 2, 2024</p>
+      </div>
+
+      <div class="inner-div">
+        <p>Recent contacts</p>
+        <p>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExampleTwo"
+            aria-expanded="false" aria-controls="collapseWidthExample">
+            <span><img src="/assets/ArrowLineRight.svg" class="arrowIcon"></span> User profile
+          </button>
+        </p>
+        <div>
+          <div class="collapse" id="collapseWidthExampleTwo">
+            <div class="card card-body">
+              <p><img src="/assets/Abstract03.svg"> Changed the style</p>
+
+              <p><img src="/assets/Female03.svg"> Natali Craig</p>
+
+              <p><img src="/assets/Male02.svg"> Drew Cano</p>
+
+              <p><img src="/assets/3D03.svg"> Andi Lane</p>
+
+              <p><img src="/assets/Abstract04.svg"> Karay Okumus.</p>
+
+              <p><img src="/assets/3D03.svg"> Kate Morrison</p>
+
+              <p><img src="/assets/Abstract04.svg"> Melody Macy</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner-div">
+        <span><img src="/assets/ArrowLineRight.svg"> Favourite contacts</span>
+      </div>
+
+    </div>
+  </div>
+</div>
